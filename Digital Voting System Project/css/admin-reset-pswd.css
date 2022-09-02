@@ -1,0 +1,44 @@
+.model-container{
+			width: 60%;
+			height: 80vh;
+			background: #fff;
+			margin: 4% auto;
+			border-radius: 4px;
+		    box-shadow: 2px 3px 5px #999;
+		}
+		.upper-section{
+			
+			text-align: center;
+			background: #2196f3;
+			color: #fff;
+			padding: 12px;
+			border-radius: 4px 4px 0px 0px;
+		}
+		
+		.model-form{
+           width: 100%;
+           padding: 50px;
+		}
+		.model-title-img{
+            background: url("../img/red.png");
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 2px #5f5f5f,
+            0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+            -8px -8px 15px #fff;
+            margin-left: 44%;
+		}
+		.model-form .input-group .input-group-text,input{
+			margin-top: 5%;
+		}
+		.btn{
+			float: right;
+			margin-top: 4%;
+		}
+		.btn:focus{
+			background: darkgreen;
+		}
+		

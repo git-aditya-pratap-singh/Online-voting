@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background:linear-gradient(to right,blue,cyan);
+}
+.main{
+	width: 80%;
+	height: 90vh;
+	background: #fff;
+	margin: 35px auto;
+	border-radius: 5px;
+	box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+}
+.header{
+	width: 100%;
+	height: 12vh;
+	background: #00bcd4;
+	border-radius: 5px 5px 0px 0px;
+}
+.main .header h2{
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	font-family: cursive;
+}
+.logo{
+  font-size:76px;
+  margin: -20px 46%;
+ 
+  background: url("../img/red.png");
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 2px #5f5f5f,
+  0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+  -8px -8px 15px #fff;
+}
+.body{
+	margin: 48px;
+	display: flex;
+}
+.input-admin{
+  display: flex;
+  width: 40%;
+  margin-top: 15px;
+  border: 1px solid #00000094;
+  border-radius: 3px;
+  background: #fff;
+  justify-content: space-between;
+
+}
+.input-admin2{
+	display: flex;
+  width: 40%;
+  margin-top: 15px;
+  border: 1px solid #00000094;
+  border-radius: 3px;
+  background: #fff;
+  justify-content: space-between;
+}
+#iconadmin{
+    padding: 10px 10px;
+    background: none;
+    color: #0056f3;
+    background: transparent;
+    position: absolute;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-left: 30px;
+  background: #ecf0f3;
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
+#temp1{
+	margin-left: 40px;
+}
+.input-container{
+  display: flex;
+  width: 40%;
+  margin:15px auto;
+  justify-content: space-between;
+
+}
+.ip{
+	width: 70%;
+	display: flex;
+	
+	
+}
+.ip span{
+	margin: 12px 0px;
+	font-size: 16px;
+	
+}
+.ip input[type=radio]{
+	margin:  16px 9px;
+	
+}
+.ip i{
+	margin: 16px 0px;
+	color: #00bcd4;;
+}
+.admin-submit{
+	margin-left: 43%;
+	width: 170px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: cursive;
+	background: #00bcd4;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+.admin-submit:hover{
+	opacity: 0.8;
+	
+}
+.admin-submit:focus{
+	box-shadow: 1px 1px 2px #333;
+}
+
+
+
+
+
+@media only screen and (max-width: 568px){
+	.main{
+		height: 120vh;
+	}
+	.logo{
+		margin-left: 39%;
+	}
+	.body{
+    display: inline-block;
+	}
+	#body2{
+		margin-top: -45px;
+		display: inline-block;
+	}
+	.input-admin{
+     width: 148%;
+	}
+	.input-admin2{
+		width: 106%;
+	}
+
+	#temp1{
+		margin-left:0px;
+	}
+	.input-container{
+		display: inline-block;
+		width: 80%;
+    margin: -30px 50px;
+    
+	}
+	.ip{
+    margin: -10px 0px;
+	}
+	.button-box{
+		margin-top: 10%;
+		margin-left: -25%;
+	}
+	
+
+	
+}

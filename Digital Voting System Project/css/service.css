@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Cabin', sans-serif;
+}
+
+.service-box{
+	width: 100%;
+	height: 90vh;
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../img/nim.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	position: relative;
+}
+.service-box h1{
+	margin: 5% auto;
+	color: #fff;
+	font-weight: bold;
+	font-family: cursive;
+	font-size: 40px;
+	text-decoration: overline;
+	
+}
+.service-box .flex-item-1{
+	position: absolute;
+	width: 20%;
+    height: 30vh;
+    margin: 20% 3%;
+    padding: 10px;
+    background: #fff3f3;
+    color: #777;
+    border-radius: 5px;
+}
+.service-box .flex-item-1 h2,
+.service-box .flex-item-2 h2,
+.service-box .flex-item-3 h2,
+.service-box .flex-item-4 h2{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 15%;
+	color: black;
+
+}
+.service-box .flex-item-1 p,
+.service-box .flex-item-2 p,
+.service-box .flex-item-3 p,
+.service-box .flex-item-4 p{
+	padding: 20px 20px;
+	font-size: 15px;
+}
+.service-box .flex-item-2{
+	position: absolute;
+	width: 20%;
+    height: 30vh;
+    margin: 20% 27%;
+    padding:  10px;
+    background: #fff3f3;
+    color: #777;
+    border-radius: 5px;
+}
+.service-box .flex-item-3{
+	position: absolute;
+	width: 20%;
+    height: 30vh;
+    margin: 20% 52%;
+    padding: 10px;
+    background: #fff3f3;
+    color: #777;
+    border-radius: 5px;
+}
+.service-box .flex-item-4{
+	position: absolute;
+	width: 20%;
+  height: 30vh;
+  margin: 20% 77%;
+  padding: 10px;
+  background: #fff3f3;
+  color: #777;
+  border-radius: 5px;
+    
+}
+.service-box .flex-item-1:hover,
+.service-box .flex-item-2:hover,
+.service-box .flex-item-3:hover,
+.service-box .flex-item-4:hover{
+  background:#4193cdd1;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.service-box .flex-item-1 .logoservice,
+.service-box .flex-item-2 .logoservice,
+.service-box .flex-item-3 .logoservice,
+.service-box .flex-item-4 .logoservice{
+	 width: 80px;
+	 height: 80px;
+	 background: #9ca9a7;
+	 border-radius: 50px;
+	 position: absolute;
+	 margin: -17% 34%;
+	 justify-content: center;
+}
+#item1{
+   background-image: url("../img/admin.png");
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+#item2{
+   background-image: url("../img/elections.png");
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+#item3{
+   background-image: url("../img/output.png");
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+#item4{
+   background-image: url("../img/support.png");
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 font-size: 10px;
+}
+
+
+@media (max-width: 650px){
+
+	.service-box h1{
+		margin: 10% auto;
+		font-size: 25px;
+	}
+	.service-box{
+		display: flex;
+		flex-direction: column;
+		height: 120vh;
+	}
+	.service-box .flex-item-1{
+		width: 40%;
+		margin: 30% 4%;
+		height: 40vh;
+		
+	}
+  .service-box .flex-item-2{
+	  margin: 30% 55%;
+	  width: 40%;
+	  height: 40vh;
+}
+  .service-box .flex-item-3{
+   margin: 100% 4%;
+   width: 40%;
+   height: 40vh;
+}
+  .service-box .flex-item-4{
+   margin: 100% 55%;
+   width: 40%;
+   height: 40vh;
+}
+  .service-box .flex-item-1 .logoservice
+  {
+  	margin: -25% 25%;
+  	
+  }
+  .service-box .flex-item-2 .logoservice
+  {
+  	margin: -25% 27%;
+  	
+  }
+  .service-box .flex-item-3 .logoservice
+  {
+  	margin: -25% 25%;
+  	
+  }
+  .service-box .flex-item-4 .logoservice
+  {
+  	margin: -25% 27%;
+  	
+  }
+  .service-box .flex-item-1 h2,
+  .service-box .flex-item-2 h2,
+  .service-box .flex-item-3 h2,
+  .service-box .flex-item-4 h2{
+	  font-size: 18px;
+	  margin-top: 20%;
+	}
+  .service-box .flex-item-1 p,
+  .service-box .flex-item-2 p,
+  .service-box .flex-item-3 p,
+  .service-box .flex-item-4 p{
+	  padding: 15px 15px;
+	  font-size: 15px;
+}
+
+}

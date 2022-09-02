@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f9f9f9;
+}
+.main{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+.mydetails{
+	width: 26%;
+	height: 100vh;
+	background: #eceff1;
+	
+}
+
+.myimage{
+	margin: 50px auto;
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	background: #fff;
+	box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px #888;
+}
+.mydata{
+	margin: 30px auto;
+	width: 100%;
+	height: 60vh;
+  color: black;
+  cursor: pointer;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 12px;
+	font-family: cursive;
+	line-height: 1.8rem;
+}
+.vote{
+	width: 80%;
+	height: 100vh;
+	
+	
+}
+.candidate{
+	margin: 40px auto;
+	width: 80%;
+	height: 35vh;
+	background: #fff;
+	border-radius: 4px;
+	display: flex;
+	box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px #fff;
+}
+.candidate_info{
+	width: 60%;
+	height: 100%;
+	background: #fff;
+	border-radius: 4px 0px 0px 4px;
+	text-align: center;
+	
+}
+.candidate_info h4{
+   color: #111;
+   cursor: pointer;
+   font-family: cursive;
+   margin-top: 10px;
+}
+.candidate_image{
+
+	width: 140px;
+	height: 140px;
+	border-radius: 100px;
+	background: #fff;
+	margin: 50px auto;
+	box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px  #f9f9f9;
+}
+.vote-btn{
+  width: 150px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 7px;
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  color: #fff;
+  background: #2196f3;
+  font-family: cursive;
+   box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px #fff;
+  justify-content: space-around;
+  cursor: pointer;
+
+}
+.vote-btn:focus{
+	background: #0bffb091;
+	border: none;
+}
+#icon{
+	color: #fff;
+}
+
+.voter_logout{
+
+	width: 100%;
+	height: 10vh;
+	
+	margin: -25% auto;
+	text-align: center;
+	justify-content: space-between;
+}
+.voter_logout span{
+	color: black;
+	font-family: cursive;
+	font-size: 18px;
+	line-height: 1.8rem;
+	cursor: pointer;
+}
+
+
+
+.model-container{
+	display: none;
+	position: absolute;
+	width: 36%;
+	height: 45vh;
+	border-radius: 4px;
+	background: #fff;
+	margin: -30% 2%;
+	box-shadow: 3px 3px 8px #b1b1b1,
+  0px 0px 0px #fff;
+  animation-name: slideme;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.text{
+	width: 95%;
+	border-radius: 4px 4px 0px 0px;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	background: #03a9f4;
+	font-family: cursive;
+}
+.admin_cross{
+	
+margin-top: -34px;
+float: right;
+margin-right: 5%;
+cursor: pointer;
+color: #fff;
+}
+
+
+
+.contactForm{
+	margin-top: 20px;
+	border-radius: 0px 0px 4px 4px;
+	margin: auto;
+	width: 90%;
+
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.contactForm .inputBox button[type="submit"]{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	font-size: 16px;
+	float: right;
+	border-radius: 5px;
+
+}
+.input-field_bt{
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 25px;
+  border: 1px solid #00000094;
+  border-radius: 5px;
+  color: #fff;
+  background: #2196f3;
+   box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px #fff;
+  justify-content: space-between;
+
+}
+
+
+@keyframes slideme{
+
+	0%{
+		transform: translateX(-500px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+  
+	
+}
+
+
+
+@media only screen and (max-width: 568px){
+	.main{
+		display: flex;
+		flex-direction: column;
+	}
+	.mydetails{
+	   width: 100%;
+	   height: 100vh;
+    }
+    .vote{
+    	width: 100%;
+    }
+    .candidate{
+    	width: 90%;
+    }
+}

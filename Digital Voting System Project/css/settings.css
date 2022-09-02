@@ -1,0 +1,191 @@
+*{
+	margin: 0;	
+	padding: 0;
+
+}
+.model-container{
+	position: relative;
+	display: flex;
+}
+.model-container > .item1{
+	width: 50%;
+	height: 100vh;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid darkgray;
+	border-top: 0;
+	border-left: 0;
+	border-bottom: 0;
+	position: relative;
+	
+	
+}
+.model-container > .item1 >.item1-element{
+	justify-content: space-around;
+	margin: 0% auto;
+	color: #999;
+	line-height: 2.5rem;
+}
+.model-container > .item2{
+	width: 50%;
+	height: 100vh;
+	padding: 20px;
+	background: #fff;
+	position: relative;
+}
+.model-container > .item1 > .item1-element > .notify{
+    width: 100%;
+	padding: 4px;
+	background: #007267;
+	color: #fff;
+	font-family: 'Zen Antique Soft', serif;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.model-container > .item2 > .item2-element > .notify{
+	width: 100%;
+	padding: 10px;
+	background: #007267;
+	color: #fff;
+	font-family: 'Zen Antique Soft', serif;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.model-container > .item2 > .item2-element > .title-form{
+	margin: 2% auto;
+	padding: 15px;
+}
+.logo{
+
+   margin: 2% auto;
+   background: url("../img/time-management-animate.svg");
+   width: 250px;
+   height: 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
+  
+}
+.model-container > .item1 > .item1-element > .del_msg{
+	width: 100%;
+	background: #374f5b;
+	padding: 4px;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Zen Antique Soft', serif;
+	
+}
+.model-container > .item1 > .item1-element > .model-form{
+	display: flex;
+	width: 100%;
+	padding: 2px;
+	margin: 5% auto;
+	justify-content: space-around;
+}
+.model-container > .item1 > .item1-element > .model-form input{
+    border: 1px solid #ccc;
+    width: 300px;
+	border-radius: 30px;
+	height: 40px;
+	text-align: center;
+	overflow-x: hidden;
+	padding: .5rem;
+}
+
+/*------Message delete & edit design---------*/
+
+.model-search{
+	position: absolute;
+	display: none;
+	margin: -42% 25%;
+	width: 50%;
+	height: 85vh;
+	padding: 15px;
+	border-radius: 5px;
+	background: #fff;
+	animation-name: animate;
+	animation-duration: 1s;
+	
+	box-shadow: 0px 1px 2px 2px #999;
+}
+.model-search > .notify{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	background: #374f5b;
+	border-radius: 5px 5px 5px 5px;
+	color: #fff;
+	font-family: 'Zen Antique Soft', serif;;
+}
+.model-search > .notify i{
+	color:red;
+	position: absolute;
+	margin: 1% 35%;
+}
+.model-search > .logo1{
+   margin: 2% auto;
+   background: url("../img/work-time-animate.svg");
+   width: 150px;
+   height: 100px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.search-button{
+   display: flex;
+   float: right;
+   width: 30%;
+   justify-content: space-around;
+}
+
+@keyframes animate{
+	from {transform: scale(0)}
+    to {transform: scale(1)}
+  
+}
+
+@media screen and (max-width: 320px){
+    .model-search{
+		width: 75%;
+		height: 110vh;
+	
+	}
+}
+
+
+@media screen and (max-width: 360px){
+	.model-search{
+		width: 65%;
+		height: 90vh;
+		margin-left: 17%;
+		
+
+	}
+	
+}
+
+@media screen and (max-width: 658px){
+	.model-container{
+	   display: block;
+	}
+	.model-container > .item1{
+	   width: 100%;	
+    }
+    .model-container > .item2{
+	   width: 100%;	
+    }
+    .model-search{
+    	margin-top: -280%;
+    }
+    .model-search > .notify i{
+	   
+	   margin: 2% 14%;
+    }
+    .search-button{ 
+      width: 100%;
+      justify-content: space-around;
+   }
+}
